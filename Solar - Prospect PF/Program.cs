@@ -7,7 +7,7 @@ using OpenQA.Selenium.Support.UI;
 
 class Program
 {
-    static void Main()
+    static void Main() 
     {        
         ChromeOptions options = new ChromeOptions();
         options.AddArgument(@"user-data-dir=C:\Users\jpgal\AppData\Local\Google\Chrome\User Data\Default");//Tentativa de armazenar cache pelo chrome, mas não deu certo
