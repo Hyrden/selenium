@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jpgal\\OneDrive\\Documents\\Selenium\\Solar - Prospect PF\\Solar - Prospect PF.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jpgal\\OneDrive\\Documents\\Selenium\\Solar - Prospect PF\\Solar - Prospect PF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jpgal\\OneDrive\\Documents\\Selenium\\Solar - Prospect PF\\Solar - Prospect PF.csproj",
+        "projectName": "Solar - Prospect PF",
+        "projectPath": "C:\\Users\\jpgal\\OneDrive\\Documents\\Selenium\\Solar - Prospect PF\\Solar - Prospect PF.csproj",
+        "packagesPath": "C:\\Users\\jpgal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jpgal\\OneDrive\\Documents\\Selenium\\Solar - Prospect PF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jpgal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.16.2, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.16.2, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
