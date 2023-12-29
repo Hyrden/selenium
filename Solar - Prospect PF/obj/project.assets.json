@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.10.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        }
+      },
       "Microsoft.Win32.SystemEvents/8.0.0": {
         "type": "package",
         "compile": {
@@ -94,6 +106,21 @@
     }
   },
   "libraries": {
+    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+      "sha512": "xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
+      "type": "package",
+      "path": "dotnetseleniumextras.waithelpers/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+        "dotnetseleniumextras.waithelpers.nuspec",
+        "lib/net35/SeleniumExtras.WaitHelpers.dll",
+        "lib/net40/SeleniumExtras.WaitHelpers.dll",
+        "lib/net45/SeleniumExtras.WaitHelpers.dll",
+        "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll"
+      ]
+    },
     "Microsoft.Win32.SystemEvents/8.0.0": {
       "sha512": "9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
       "type": "package",
@@ -233,6 +260,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Selenium.Support >= 4.16.2",
       "Selenium.WebDriver >= 4.16.2",
       "System.Drawing.Common >= 8.0.0"
@@ -275,6 +303,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "DotNetSeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[3.11.0, )"
+          },
           "Selenium.Support": {
             "target": "Package",
             "version": "[4.16.2, )"
