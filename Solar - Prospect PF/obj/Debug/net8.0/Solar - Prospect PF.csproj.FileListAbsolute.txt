@@ -24,3 +24,4 @@ C:\Users\jpgal\OneDrive\Documents\Selenium\Solar - Prospect PF\bin\Debug\net8.0\
 C:\Users\jpgal\OneDrive\Documents\Selenium\Solar - Prospect PF\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\jpgal\OneDrive\Documents\Selenium\Solar - Prospect PF\bin\Debug\net8.0\WebDriver.Support.dll
 C:\Users\jpgal\OneDrive\Documents\Selenium\Solar - Prospect PF\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll
+C:\Users\jpgal\OneDrive\Documents\Selenium\Solar - Prospect PF\obj\Debug\net8.0\Solar - Prospect PF.sourcelink.json
