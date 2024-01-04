@@ -11,9 +11,13 @@ class ResidentialJourney{
         options.AddArgument(@"user-data-dir=C:\Users\jpgal\AppData\Local\Google\Chrome\User Data\Default");//Tentativa de armazenar cache pelo chrome, mas não deu certo
         var driver = new ChromeDriver(options);
         driver.Url = $"https://cec-claro--{Data.ORG_ALIAS}.sandbox.lightning.force.com/lightning/n/Buscar_Cliente"; //Redirecionando diretamente para a tela prospect de buscar cliente
-        if (Utils.IsLoginPage(driver)){
-            driver.FindElement(By.Name("username")).SendKeys(Data.USERNAME);
-            driver.FindElement(By.Name("pw")).SendKeys(Data.PASSWORD + Keys.Return);
+        
+        LoginPage loginPage = new LoginPage(driver);
+        
+        if (loginPage.IsLoginPage()){
+            loginPage.EnterUserName(Credentials.USERNAME);
+            loginPage.EnterPassword(Credentials.PASSWORD);
+            loginPage.ClickLoginButton();
         }
         //Desenvolver tudo dentro do Try, para que o selenium faça o logout do usuário mesmo se estourar um erro
         try{
