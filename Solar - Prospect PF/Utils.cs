@@ -8,14 +8,14 @@ using SeleniumExtras.WaitHelpers;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 class Utils{
-    /*  Método WaitInterval
+    /*  Método WaitUntilVisible/WaitInterval
         Descrição: Criei este método para o tempo de espera das interações ser melhor do que o uso do Thread.Sleep.
         Teoricamente, ele permite você definir segundos-limite de espera antes de dar timeout, e milisegundos para 
         o selenium checar de tempos em tempos.
         O problema de usar o Thread.sleep é que dependendo de como esteja a org do salesforce, o tempo pode variar,
         para mais ou para menos.
     */
-    public static IWebElement WaitInterval(IWebDriver driver, int seconds, int miliseconds, string xpath){
+    public static IWebElement WaitUntilVisible(IWebDriver driver, int seconds, int miliseconds, string xpath){
         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
         wait.PollingInterval = TimeSpan.FromMilliseconds(miliseconds);    
         return wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xpath)));
@@ -28,6 +28,11 @@ class Utils{
         }else{
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xpath))).SendKeys(action);
         }
+    }
+    public static IWebElement WaitUntilClickable(IWebDriver driver, int seconds, int miliseconds, string xpath){
+        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
+        wait.PollingInterval = TimeSpan.FromMilliseconds(miliseconds);    
+        return wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath(xpath)));
     }
     public static bool IsLoginPage(IWebDriver driver){
         try

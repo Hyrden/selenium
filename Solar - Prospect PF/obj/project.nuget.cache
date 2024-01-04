@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CbHxJ6xb5BjxxcNdHCqQZ+0IuetCJFQGJySeCANb+e9XWem7VtOJkDPPF3hvBTiZTOFzvxsNuKoMK0E147Y8qA==",
+  "dgSpecHash": "ecjNMsdT/YcaEVOHrl/WhLhK2VTlCjSvdl87/18jrHTRXste2nOBFRKj66Cw5m/I68V2/0G7L5A8umbD35/DsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jpgal\\OneDrive\\Documents\\Selenium\\Solar - Prospect PF\\Solar - Prospect PF.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jpgal\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
     "C:\\Users\\jpgal\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\jpgal\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\jpgal\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
