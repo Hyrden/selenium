@@ -22,7 +22,7 @@ class Data{
     public const string USERNAME = Credentials.USERNAME;
     public const string PASSWORD = Credentials.PASSWORD;
     public const string ORG_ALIAS = "bugfix22";
-    public const string SCREENSHOTS_FOLDER = @"C:\Users\jpgal\OneDrive\Imagens\Selenium Screenshots\Jornada Prospect PF";
+    public static string SCREENSHOTS_FOLDER = @"C:\Users\jpgal\OneDrive\Imagens\Selenium Screenshots\Jornada Prospect PF\" + $"{DateTime.Now:ddMMyyyy_HHmmss}";
     /**************************************************/
 
     /***********Informações para a jornada*************/

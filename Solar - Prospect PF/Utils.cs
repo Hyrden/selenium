@@ -15,6 +15,11 @@ class Utils{
         O problema de usar o Thread.sleep é que dependendo de como esteja a org do salesforce, o tempo pode variar,
         para mais ou para menos.
     */
+    public static IWebElement WaitInterval(IWebDriver driver, int seconds, int miliseconds, string xpath){
+        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
+        wait.PollingInterval = TimeSpan.FromMilliseconds(miliseconds);    
+        return wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xpath)));
+    }
     public static void WaitInterval(IWebDriver driver, int seconds, int miliseconds, string xpath, string action){
         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(seconds));
         wait.PollingInterval = TimeSpan.FromMilliseconds(miliseconds);          
@@ -51,6 +56,9 @@ class Utils{
     }
     public static void TakeScreenshot(IWebDriver driver, String text, String errorMessage){
         try{
+            if (!Directory.Exists(Data.SCREENSHOTS_FOLDER)){
+                Directory.CreateDirectory(Data.SCREENSHOTS_FOLDER);
+            }
             string pathToSave = Data.SCREENSHOTS_FOLDER;
             string fileName = $"screenshot_{text}_{DateTime.Now:ddMMyyyy_HHmmss}.png";
             Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();

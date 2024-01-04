@@ -102,10 +102,13 @@ class ResidentialJourney{
             Utils.TakeScreenshot(driver,"evidencia_tela_hp_viabilidade",null);
             //Seguindo para tela de carrinho
             Utils.NextBtn(driver,"Carrinho");
-            Thread.Sleep(35000);//Tempo necessário para a tela de carrinho
+
+            //Thread.Sleep(35000);//Tempo necessário para a tela de carrinho
 
             //Tela de Carrinho
-            driver.FindElement(By.XPath("//*[@id='modal-content-id-1']/div[2]/span[2]/button")).Click();//Fechando modal LGPD
+            IWebElement btnFecharModal = Utils.WaitInterval(driver,35,1000,"//*[@id='modal-content-id-1']/div[2]/span[2]/button");
+            btnFecharModal.Click();
+            //driver.FindElement(By.XPath("//*[@id='modal-content-id-1']/div[2]/span[2]/button")).Click();//Fechando modal LGPD
 
             //Aviso: dependendo de como esteja o catálogo, ajustes deverão ser feitos
             Thread.Sleep(10000);//O WaitInterval de baixo não funcionou, por algum motivo bizarro... Adicionando 10 segundos pra fechar o LGPD
