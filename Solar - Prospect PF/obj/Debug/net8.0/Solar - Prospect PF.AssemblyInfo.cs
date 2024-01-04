@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Solar - Prospect PF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87e432424a29184db1f01ab0a7f5dfcc529502d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Solar - Prospect PF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Solar - Prospect PF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
